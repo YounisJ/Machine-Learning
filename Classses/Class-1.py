@@ -8,7 +8,7 @@ print(type(z))
 
 #2-Types of operators
 #3-Series of values
-  # Tuples
-  # List
-  # Dictionary
-  # Sets
+  # Tuples ()
+  # List []
+  # Dictionary {}
+  # Sets {}
