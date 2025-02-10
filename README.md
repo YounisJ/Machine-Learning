@@ -6,8 +6,8 @@ Variables
 Type of operators
 Series of values
 
-### Supervised learnign
+### 1 - Supervised learnign
 Do the Labeling the of data
 
-### Unsupervised learning
+### 2 - Unsupervised learning
 Machine Learn itself
