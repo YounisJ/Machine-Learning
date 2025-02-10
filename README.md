@@ -1,6 +1,6 @@
 # Machine-Learning
 
-## DAY-1 :    
+## DAY-1-Python:    
 
 Variables 
 Type of operators
