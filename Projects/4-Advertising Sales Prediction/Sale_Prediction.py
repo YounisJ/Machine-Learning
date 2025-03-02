@@ -16,5 +16,5 @@ model = LinearRegression()
 model.fit(X_train,y_train)
 y_pred = model.predict(X_test)
 
-# Accuracy 0.80-0.93
+# Accuracy
 print(r2_score(y_test,y_pred))

@@ -6,7 +6,7 @@ from sklearn.metrics import r2_score
 
 
 
-# Load the dataset
+# Load dataset
 diabetes_ds = load_diabetes()
 df = pd.DataFrame(diabetes_ds.data, columns=diabetes_ds.feature_names)
 df["diabetes_progression"] = diabetes_ds.target
@@ -18,7 +18,7 @@ y = df["diabetes_progression"]
 
 X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2)
 
-# Load, train and make predictions
+# Load and train model then make predictions
 model = LinearRegression()
 model.fit(X_train,y_train)
 predictions = model.predict(X_test)

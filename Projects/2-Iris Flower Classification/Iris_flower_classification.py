@@ -1,7 +1,7 @@
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score  # Use accuracy_score instead of r2_score
+from sklearn.metrics import accuracy_score  
 
 import pandas as pd
 
@@ -24,6 +24,6 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 print(y_pred)
 
-# Check Accuracy 0.96
+# Check Accuracy
 accuracy = accuracy_score(y_test, y_pred)
 print("Model Accuracy:", accuracy)

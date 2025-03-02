@@ -5,7 +5,7 @@ from sklearn.metrics import r2_score
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
-# Load Dataset, Add feature names, Add Target Label
+# Load Dataset
 california_housing = fetch_california_housing()
 df = pd.DataFrame(california_housing.data, columns=data.feature_names)
 df['House_Value'] = california_housing.target
@@ -19,6 +19,6 @@ X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2)
 model = LinearRegression()
 model.fit(X_train,y_train)
 
-# Accuracy 0.61
+# Accuracy
 y_pred = model.predict(X_test)
 print(r2_score(y_test,y_pred))
