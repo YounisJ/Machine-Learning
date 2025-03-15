@@ -14,7 +14,10 @@ class SimpleReflexAgent:
             self.environment[self.location] = "Clean"
         else:
             print(f"Moving from Room {self.location}...")
-            self.location = "B" if self.location == "A" else "A"
+            if self.location == "A":
+                self.location = "B"
+            else:
+                self.location = "A"
 
     def run(self, steps=2):
         """Runs the agent for a fixed number of steps."""
