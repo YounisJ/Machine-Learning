@@ -12,6 +12,7 @@ def extract_features(pcap_file):
     cap = pyshark.FileCapture(pcap_file)
     data = []
     
+    
     for packet in cap:
         try:
             features = {
