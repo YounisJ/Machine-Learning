@@ -16,6 +16,7 @@ def extract_features(pcap_file):
 
 
 
+
     for packet in cap:
         try:
             features = {
